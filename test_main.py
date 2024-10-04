@@ -3,7 +3,6 @@ Test goes here
 
 """
 
-import os
 from mylib.extract import extract
 from mylib.transform_load import load
 from mylib.query import DBquery, CRUD_Create, CRUD_Read, CRUD_Update, CRUD_Delete
