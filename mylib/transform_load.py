@@ -1,7 +1,6 @@
 """
 Transforms and Loads data into the local SQLite3 database
-Example:
-,general name,count_products,ingred_FPro,avg_FPro_products,avg_distance_root,ingred_normalization_term,semantic_tree_name,semantic_tree_node
+
 """
 
 import sqlite3
@@ -20,7 +19,8 @@ def load(dataset="data/goose_rawdata.csv"):
     c = conn.cursor()
     c.execute("DROP TABLE IF EXISTS GooseDB")
     c.execute(
-        "CREATE TABLE GooseDB (name,year,team,league,goose_eggs,broken_eggs,mehs,league_average_gpct,ppf,replacement_gpct,gwar,key_retro)"
+        "CREATE TABLE GooseDB (name,year,team,league,goose_eggs,broken_eggs,mehs,"
+        "league_average_gpct,ppf,replacement_gpct,gwar,key_retro)"
     )
     # insert
     c.executemany(

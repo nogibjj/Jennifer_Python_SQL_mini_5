@@ -19,7 +19,9 @@ def CRUD_Create():
     cursor = conn.cursor()
     # create execution
     cursor.execute(
-        "INSERT INTO GooseDB (name,year,team,league,goose_eggs,broken_eggs,mehs,league_average_gpct,ppf,replacement_gpct,gwar,key_retro) VALUES ('Jennifer Li', 2024, 'DKU', 'AL', 0, 0, 0, 0.0, 0.0, 0.0, 0.0, 'jennifer101')"
+        "INSERT INTO GooseDB (name,year,team,league,goose_eggs,broken_eggs,mehs,"
+        "league_average_gpct,ppf,replacement_gpct,gwar,key_retro)"
+        "VALUES ('Jennifer Li', 2024, 'DKU', 'AL', 0, 0, 0, 0.0, 0.0, 0.0, 0.0, 'jennifer101')"
     )
     conn.commit()
     conn.close()
