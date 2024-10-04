@@ -14,6 +14,10 @@ def load(dataset="data/goose_rawdata.csv"):
 
     # prints the full working directory and path
     print(os.getcwd())
+    dataset_path = os.path.abspath(dataset)
+    if not os.path.exists(dataset_path):
+        raise FileNotFoundError(f"{dataset_path} does not exist")
+
     payload = csv.reader(open(dataset, newline=""), delimiter=",")
     conn = sqlite3.connect("GooseDB.db")
     c = conn.cursor()
