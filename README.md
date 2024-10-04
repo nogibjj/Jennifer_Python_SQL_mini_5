@@ -1,7 +1,6 @@
 [![CI](https://github.com/nogibjj/Jennifer_Python_SQL_mini_5/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/Jennifer_Python_SQL_mini_5/actions/workflows/cicd.yml)
 
 
-
 ## SQLite Lab
 
 
