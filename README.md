@@ -9,7 +9,6 @@ This mini 5 project focuses on integrating Python scripting with SQL databases, 
 ## Project Data Source
 The data used in this project comes FiveThirtyEight's public dataset: https://raw.githubusercontent.com/fivethirtyeight/data/refs/heads/master/goose/goose_rawdata.csv 
 
-
 ## Project Features
 1. Data Extraction: Fetch data from a URL and save it locally
 2. Data Transformation and Loading: Process the extracted data and load it into a SQLite database
@@ -17,9 +16,12 @@ The data used in this project comes FiveThirtyEight's public dataset: https://ra
 4. CRUD Operations: Demonstrate Create, Read, Update, and Delete operations on the database
 5. Automated Testing: Includes test cases for all major functionalities
 
-
 ### Data Extraction & Transformation
+Use function 'extract()' to fetch data from a URL and save it as the CSV data. Then use the function 'load()' to transforms the CSV data and loads it into a SQLite database named GooseDB.db
 ![alt text](image-3.png)
+
+### SQL Queries
+![alt text](image-4.png)
 
 ### Database Operations
 ![alt text](image-2.png)
@@ -30,3 +32,5 @@ The data used in this project comes FiveThirtyEight's public dataset: https://ra
 
 ## References
 https://github.com/nogibjj/sqlite-lab
+
+
