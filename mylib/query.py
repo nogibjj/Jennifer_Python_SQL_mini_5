@@ -4,11 +4,11 @@ import sqlite3
 
 
 def DBquery():
-    """Query the database for the top 5 rows of the GooseDB table"""
+    """Query the database for the top 10 rows of the GooseDB table"""
     conn = sqlite3.connect("GooseDB.db")
     cursor = conn.cursor()
-    cursor.execute("SELECT * FROM GooseDB")
-    print("Top 5 rows of the GooseDB table:")
+    cursor.execute("SELECT * FROM GooseDB LIMIT 10")
+    print("Top 10 rows of the GooseDB table:")
     print(cursor.fetchall())
     conn.close()
     return "Query Successfully"

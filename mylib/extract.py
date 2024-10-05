@@ -31,15 +31,3 @@ def extract(
         print(f"Failed to retrieve the file. HTTP Status Code: {response.status_code}")
 
     return file_path
-
-
-# def extract(
-#     url="https://github.com/fivethirtyeight/data/raw/refs/heads/master/"
-#     "goose/goose_rawdata.csv",
-#     file_path="data/goose_rawdata.csv",
-# ):
-#     """ "Extract a url to a file path"""
-#     with requests.get(url) as r:
-#         with open(file_path, "wb") as f:
-#             f.write(r.content)
-#     return file_path
